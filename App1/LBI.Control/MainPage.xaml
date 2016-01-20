@@ -1,0 +1,81 @@
+﻿<Page
+    x:Class="LBI.Control.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LBI.Control"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <!--<Cnvas Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
+
+        <!--<Button x:Name="btnShow" Content="show" Click="Btn_OnClick"></Button>-->
+        
+        <!--<Rectangle Canvas.ZIndex="1" Canvas.Left="10" Canvas.Top="10" Height="100" Width="100" Fill="Red"/>
+        <Rectangle Canvas.Left="90" Canvas.Top="90" Height="100" Width="100" Fill="Yellow"/>
+        <Rectangle Canvas.Left="180" Canvas.Top="180" Height="100" Width="100" Fill="Aquamarine" HorizontalAlignment="Left"/>-->
+
+        <!--<Viewbox Height="50">
+            <SymbolIcon Foreground="Chartreuse" Canvas.Left="100" Canvas.Top="100" Symbol="Accept"></SymbolIcon>
+        </Viewbox>-->
+
+        <!--<TextBlock MaxWidth="100" TextWrapping="WrapWholeWords" Text="test test test test test test test test test test test test test test test test test testtt test test" >
+            
+        </TextBlock>-->
+        
+        <!--<TextBox Width="200" PlaceholderText="this is the first textbox"  Header="textbox" AcceptsReturn="True" TextWrapping="Wrap" SelectionChanged="TextBox_OnSelectionChanged">
+            
+        </TextBox>-->
+
+        <!--<TextBox Width="200" InputScope=""></TextBox>-->
+
+        <!--<StackPanel>
+            <RadioButton Content="test1" GroupName="gender"/>
+            <RadioButton Content="test2" GroupName="gender"/>
+            <RadioButton Content="test3" GroupName="gender"/>
+            <RadioButton Content="test4" GroupName="gender"/>
+
+            <Button x:Name="btnValue" Click="BtnValue_OnClick" Content="show"></Button>
+
+
+            <CheckBox Content="test5"  IsThreeState="False">
+
+            </CheckBox>
+
+            <TimePicker></TimePicker>
+
+            <DatePicker YearVisible="False"></DatePicker>
+
+            <ComboBox PlaceholderText="please input">
+                <ComboBox.Items>
+                    <x:String>test1</x:String>
+                    <x:String>test1</x:String>
+                    <x:String>test1</x:String>
+                    <x:String>test1</x:String>
+                </ComboBox.Items>
+            </ComboBox>
+
+            <ProgressBar IsIndeterminate="True" Margin="20" Minimum="0" Maximum="100" ></ProgressBar>
+
+            <ProgressRing IsActive="True"></ProgressRing>
+
+            <ScrollViewer>
+                <Image Source="Assets/2000 (1).jpg"></Image>
+            </ScrollViewer>
+        </StackPanel>-->
+
+    <!--<ScrollViewer x:Name="scrollViewer1">
+        <Image Source="Assets/2000 (1).jpg"></Image>
+    </ScrollViewer>-->
+    
+    <StackPanel>
+        <Slider Header="test" x:Name="slider1" Maximum="100" Minimum="0" Value="10" StepFrequency="1">
+            
+        </Slider>
+        
+        
+        <HyperlinkButton Content="test" NavigateUri="http://www.baidu.com">
+            
+        </HyperlinkButton>
+    </StackPanel>
+</Page>
