@@ -5,13 +5,13 @@
     xmlns:local="using:LBI.Control2"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
-
+    mc:Ignorable="d"
     
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-        <!--<FlipView>
-            
-        </FlipView>-->
-    </Grid>
+    DataContext="{Binding Data,
+    RelativeSource={RelativeSource Mode=Self}}"
+    >
+    <StackPanel>
+        <TextBox x:Name="textbox1" Text="{Binding Path=Id}"/>
+        <TextBox Text="{Binding Path=Time}"></TextBox>
+    </StackPanel>
 </Page>

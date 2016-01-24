@@ -13,37 +13,18 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-//“空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409 上有介绍
+// “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上提供
 
 namespace LBI.Control2
 {
     /// <summary>
     /// 可用于自身或导航至 Frame 内部的空白页。
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class BindingPage : Page
     {
-      
-        public TestData Data { get; set; }
-
-        public MainPage()
+        public BindingPage()
         {
-
-            Data = new TestData();
-
             this.InitializeComponent();
-
-        
-
-            //this.DataContext = Data;
-
-            //this.DataContext = Time;
         }
-    }
-
-    public class TestData
-    {
-        public string Id { get; set; } = "001";
-
-        public string Time { get; set; } = DateTime.Now.ToString();
     }
 }
