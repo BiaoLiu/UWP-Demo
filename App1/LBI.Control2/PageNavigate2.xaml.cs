@@ -27,8 +27,6 @@ namespace LBI.Control2
         public PageNavigate2()
         {
             this.InitializeComponent();
-
-
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -54,7 +52,12 @@ namespace LBI.Control2
 
         private void Button2_OnClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PageNavigate));
+            //this.Frame.Navigate(typeof(PageNavigate));
+
+            if (this.Frame.CanGoBack)
+            {
+                this.Frame.GoBack();
+            }
         }
     }
 }

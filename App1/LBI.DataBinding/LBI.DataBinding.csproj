@@ -101,6 +101,12 @@
     <Compile Include="DataBinding2.xaml.cs">
       <DependentUpon>DataBinding2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataTemplatePage.xaml.cs">
+      <DependentUpon>DataTemplatePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListBoxPage.xaml.cs">
+      <DependentUpon>ListBoxPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -130,6 +136,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="DataBinding2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataTemplatePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListBoxPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

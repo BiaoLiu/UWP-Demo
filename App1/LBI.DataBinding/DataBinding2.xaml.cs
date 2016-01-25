@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Windows.Input;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -40,6 +41,11 @@ namespace LBI.DataBinding
 
     public class MainData : NotifyPropertyChanged
     {
+        public MainData()
+        {
+            Command = new AddCommand();
+        }
+
         private double num1;
         public double Num1
         {
@@ -72,5 +78,28 @@ namespace LBI.DataBinding
                 OnPropertyChanged();
             }
         }
+
+        public AddCommand Command { get; set; }
+    }
+
+    public class AddCommand : ICommand
+    {
+        public bool CanExecute(object parameter)
+        {
+            return true;
+        }
+
+        public void Execute(object parameter)
+        {
+            var mainDataViewModel = parameter as MainData;
+
+            if (mainDataViewModel != null)
+            {
+                mainDataViewModel.Result = mainDataViewModel.Num1 + mainDataViewModel.Num2;
+            }
+
+        }
+
+        public event EventHandler CanExecuteChanged;
     }
 }

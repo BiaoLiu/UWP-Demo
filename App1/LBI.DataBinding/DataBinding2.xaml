@@ -19,6 +19,10 @@
         <TextBox x:Name="result" Text="{Binding Path=Result}"
                  Margin="10" Header="结果"/>
 
-        <Button x:Name="btnAdd" Content="计算" Click="BtnAdd_OnClick"/>
+        <!--<Button x:Name="btnAdd" Content="计算" Click="BtnAdd_OnClick"/>-->
+
+        <Button x:Name="btnAdd" Content="计算" 
+               Command="{Binding Command}" CommandParameter="{Binding}"/>
+        
     </StackPanel>
 </Page>
